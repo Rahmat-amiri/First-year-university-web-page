@@ -1,0 +1,54 @@
+<html data-theme="light">
+    <head>    
+        <meta charset="utf-8">
+        <!-- title of the page -->    
+        <title>	My First Year at University </title> 
+
+        <!-- Link an external CSS file -->
+        <link rel="stylesheet" href="style.css"> 
+ 
+    </head>  
+    <body>    
+        <header> 
+            <h1 id="welcome"> My First Year at University </h1> 
+            <p>To Do List </p>   
+            <button onclick="toggleTheme()">Toggle Theme</button>
+        </header>    
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="MainPage.html">Home</a></li>        
+                             
+                </ul>
+                <p style="color: black;"id="datetime"></p>
+                
+            </div>
+        </nav>    
+
+        <main>
+            <section id ="todo-list" style="display: none;">
+
+                <h2>To-Do List (my Learning Goals)</h2>
+                <div id="userprompt">
+                    <input type="text" id="taskInput" placeholder="Enter task and duration">
+                </div> 
+                <div id="taskbtn">
+                    <button onclick="addTask()">Add</button>
+                    <button onclick="">Save</button>
+                    <button onclick="">Load</button>
+                 </div>
+                 <ul id="taskList"></ul> 
+
+            </section>
+            <section id="password">
+                <h2>Enter Password to Access To-Do List</h2>
+                <input type="password" id="password-input" placeholder="Enter your password">
+                <button onclick="checkpassword()">login</button>
+                <p id="password-hint">Password hint ( INFT1016 )</p>
+            </section>
+            <footer>   <p>©Copyright 2025 by <inset your="Rahmatullah" name="Rahmatullah"> All rights reversed.</inset></p>    </footer>  
+        </main>
+
+         <script src="script.js"></script>
+    </body>
+</html>
